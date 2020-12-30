@@ -13,8 +13,11 @@ tar -C /usr/local -xzf go1.15.6.linux-amd64.tar.gz
 
 Insert在尾部黏贴以下内容
 export GOROOT=/usr/local/go #设置为go安装的路径
+
 export GOPATH=$HOME/go #默认安装包的路径
+
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+
 export PORT=80
 
 Esc :wq退出
