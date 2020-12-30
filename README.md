@@ -4,14 +4,17 @@
 
 
 1.下载golang安装包
+
 wget https://golang.org/dl/go1.15.6.linux-amd64.tar.gz
 
 2.解压至/usr/local文件夹
+
 tar -C /usr/local -xzf go1.15.6.linux-amd64.tar.gz
 
-3.配置环境变量vim /etc/profile
+3.配置环境变量 vim /etc/profile
 
 Insert在尾部黏贴以下内容
+
 export GOROOT=/usr/local/go #设置为go安装的路径
 
 export GOPATH=$HOME/go #默认安装包的路径
@@ -26,17 +29,23 @@ source /etc/profile  使修改生效.
 
 (需安装git命令  yum install git)
 克隆代码
+
 git clone -b master https://github.com/Sansui233/proxypool.git
 
 进入目录
+
 cd proxypool
 
 创建项目
+
 go build
+
 首次配置时间上比较长
 
 完成后进入目录
+
 cd proxypool
+
 修正config文件夹中的config.yaml和source.yaml
 配置文件请参考wiki
 https://github.com/Sansui233/proxypool/wiki/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%AF%B4%E6%98%8E
